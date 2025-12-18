@@ -1,0 +1,218 @@
+/* ============================
+   PAGE BACKGROUND + CENTERING
+=============================*/
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+     padding-top: 50px;    /* 👈 SPACE BETWEEN NAVBAR AND FORM */
+}
+
+/* ============================
+    MAIN PROFILE BOX (SMALLER)
+=============================*/
+.profile-container {
+    width: 420px;              /* Reduced from 550px */
+    background: #ffffff;
+    margin-top: 60px;          /* Reduced from 80px */
+    padding: 25px;             /* Reduced from 40px */
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+}
+
+/* TITLE */
+.profile-container h2 {
+    margin: 0 0 20px;
+    font-size: 22px;          /* Reduced */
+}
+
+/* ============================
+    PROFILE IMAGE (SMALLER)
+=============================*/
+.profile-pic {
+    width: 130px;             /* Reduced from 180px */
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ddd;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+/* ============================
+    BUTTON ROW (SMALLER)
+=============================*/
+.button-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;                /* Reduced spacing */
+    margin-bottom: 20px;
+}
+
+/* Buttons */
+.edit-btn,
+.delete-photo {
+    padding: 7px 15px;        /* Reduced size */
+    font-size: 14px;          /* Reduced */
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.edit-btn {
+    background: #0d6efd;
+    color: #fff;
+}
+
+.delete-photo {
+    background: #fd0d4d;
+    color: #fff;
+}
+
+/* ============================
+    USER INFORMATION (SMALLER)
+=============================*/
+.info-section {
+    margin-top: 15px;
+    text-align: left;
+    line-height: 1.6;
+    font-size: 15px;          /* Reduced */
+}
+
+/* ============================
+    ABOUT SECTION (SMALLER)
+=============================*/
+.about-box {
+    margin-top: 8px;
+}
+
+.edit-icon {
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 16px;          /* Reduced */
+}
+
+.about-input {
+    width: 100%;
+    height: 55px;             /* Reduced */
+    padding: 6px;
+    font-size: 14px;          /* Reduced */
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* Save & Cancel buttons */
+.save-btn,
+.cancel-btn {
+    padding: 6px 15px;        /* Reduced */
+    font-size: 14px;          /* Reduced */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.save-btn { background: #198754; }
+.cancel-btn { background: #6c757d; }
+
+/* ============================
+    BACK TO HOME LINK
+=============================*/
+.forgot-link {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 15px;          /* Reduced */
+    color: #004d99;
+    text-decoration: none;
+}
+
+.forgot-link:hover {
+    text-decoration: underline;
+}
+
+/* ============================
+    FULL SCREEN IMAGE VIEW
+=============================*/
+#viewImageModal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.85);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.image-view-box {
+    max-width: 90%;
+    max-height: 90%;
+    position: relative;
+}
+
+.full-image {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+}
+
+.close-full-img {
+    position: absolute;
+    top: -10px;               /* Reduced */
+    right: -15px;             /* Reduced */
+    font-size: 26px;          /* Reduced */
+    color: white;
+    cursor: pointer;
+}
+
+/* ============================
+    MODAL (SMALLER)
+=============================*/
+.modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+    z-index: 9000;
+}
+
+.modal-content {
+    background: white;
+    width: 280px;             /* Reduced */
+    margin: 15% auto;
+    padding: 15px;            /* Reduced */
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* ============================
+    TOAST MESSAGE
+=============================*/
+.toast {
+    position: fixed;
+    bottom: 15px;             /* Reduced */
+    right: 15px;
+    background: #0d6efd;
+    color: white;
+    padding: 10px 15px;       /* Reduced */
+    border-radius: 6px;
+    font-size: 14px;          /* Reduced */
+    animation: fadeOut 3s forwards;
+}
+
+@keyframes fadeOut {
+    0% {opacity: 1;}
+    80% {opacity: 1;}
+    100% {opacity: 0;}
+}

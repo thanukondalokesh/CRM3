@@ -1,0 +1,111 @@
+/* ===================================================== */
+/* GLOBAL RESET                                           */
+/* ===================================================== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Reduce top space to match new small navbar */
+.page-wrapper {
+    padding-top: 60px !important;   /* Previously 80px */
+}
+
+/* ===================================================== */
+/* TOP NAV BAR                                            */
+/* ===================================================== */
+.topbar {
+    background-color: #007bff;
+    height: 50px;                    /* Reduced from 65px */
+    width: 100%;
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 18px;                 /* Reduced left–right padding */
+    box-sizing: border-box;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 2000;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+/* Left menu icon */
+.menu-icon {
+    font-size: 22px;                 /* Reduced from 28px */
+    cursor: pointer;
+}
+
+/* Right side content */
+.right-info {
+    display: flex;
+    align-items: center;
+    gap: 14px;                       /* Smaller gap */
+    font-size: 16px;                 /* Slightly smaller */
+}
+
+/* Logout button */
+.logout-btn {
+    background: #ffffff;
+    color: #007bff;
+    padding: 5px 14px;               /* Smaller */
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.logout-btn:hover {
+    background: #e8e8e8;
+}
+
+/* ===================================================== */
+/* DROPDOWN MENU                                          */
+/* ===================================================== */
+/* ===== FORCE CLEAN DROPDOWN MENU STYLE ===== */
+
+.dropdown-menu {
+    display: none;
+    position: fixed;
+    left: 15px;
+    top: 50px;
+
+    width: 220px;
+    background: #ffffff;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    z-index: 99999;
+}
+
+/* RESET anchor styles completely */
+.dropdown-menu a {
+    display: block;
+    padding: 14px 18px;
+
+    color: #222 !important;          /* 🔥 remove purple */
+    text-decoration: none !important;/* 🔥 remove underline */
+    font-size: 15px;
+    font-weight: 500;
+
+    border-bottom: 1px solid #eee;
+    background: #fff;
+    white-space: nowrap;             /* 🔥 prevent wrapping */
+}
+
+/* Hover effect */
+.dropdown-menu a:hover {
+    background: #f5f7fa;
+    color: #007bff;
+}
+
+/* Remove last border */
+.dropdown-menu a:last-child {
+    border-bottom: none;
+}

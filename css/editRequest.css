@@ -1,0 +1,133 @@
+/* ===================== PAGE BASE STYLE ===================== */
+body {
+    margin: 0;
+    background: #eef1f5;
+    font-family: "Segoe UI", Arial, sans-serif;
+     padding-top: 50px;    /* 👈 SPACE BETWEEN NAVBAR AND FORM */
+}
+
+/* ===================== FORM CONTAINER ===================== */
+.form-box {
+    max-width: 380px;           /* Smaller box */
+    background: #ffffff;
+    padding: 18px 20px;         /* Reduced padding */
+    margin: 40px auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.10);
+    border-top: 4px solid #1a73e8;
+}
+
+.form-box h2 {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 20px;           /* Smaller title */
+    color: #1a1a1a;
+}
+
+/* ===================== INPUT FIELDS ===================== */
+label {
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 4px;        /* Reduced spacing */
+    display: block;
+    color: #333;
+}
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 8px;              /* Smaller inputs */
+    margin-bottom: 12px;
+    border: 1px solid #ccd1d7;
+    border-radius: 5px;
+    background: #fafafa;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+textarea {
+    height: 60px;              /* Small textarea */
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #1a73e8;
+    background: #fff;
+    box-shadow: 0 0 3px rgba(26,115,232,0.3);
+    outline: none;
+}
+
+/* ===================== SUBMIT BUTTON ===================== */
+.btn-submit {
+    width: 100%;
+    padding: 9px;
+    background: #1a73e8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;          /* Smaller button text */
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-submit:hover {
+    background: #0b57c5;
+}
+
+/* ===================== BACK BUTTON ===================== */
+.back-button {
+    text-align: center;
+    margin: 18px 0;            /* Reduced spacing */
+}
+
+.btn-back {
+    padding: 7px 14px;
+    background: #555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.btn-back:hover {
+    background: #333;
+}
+ /* ======= BUTTON ROW (Update + Cancel Side by Side) ======= */
+        .button-row {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+
+        /* Blue Update Button */
+        .btn-update {
+            padding: 10px 25px;
+            background: #1a73e8;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+        .btn-update:hover {
+            background: #0b57c5;
+        }
+
+        /* Red Cancel Button */
+        .btn-cancel {
+            padding: 10px 25px;
+            background: #d93025;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 15px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn-cancel:hover {
+            background: #b1251d;
+        }

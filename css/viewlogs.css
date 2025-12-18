@@ -1,0 +1,124 @@
+/* =========================================
+   PAGE BACKGROUND
+========================================= */
+body {
+    font-family: Arial, sans-serif;
+    background: #eef3f9;        /* softer premium grey */
+    margin: 0;
+    padding: 0;
+}
+
+/* =========================================
+   MAIN WRAPPER
+========================================= */
+.container {
+    width: 92%;
+    max-width: 1250px;
+    margin: 110px auto 60px auto;
+}
+
+/* =========================================
+   HEADING
+========================================= */
+h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #003d80;
+    margin-bottom: 28px;
+    font-weight: 700;
+    letter-spacing: 0.5px;         /* more modern */
+}
+
+/* =========================================
+   TABLE STYLE
+========================================= */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    border-radius: 12px;            /* smoother corners */
+    overflow: hidden;
+}
+
+.data-table th {
+    background: #008cff;
+    color: #fff;
+    padding: 14px;
+    font-size: 15px;
+    text-align: left;
+}
+
+.data-table td {
+    padding: 14px;
+    font-size: 14px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.data-table tr:nth-child(even) {
+    background: #f6f9ff;
+}
+
+.data-table tr:hover {
+    background: #dceaff;
+    transition: 0.15s ease-in-out;
+}
+
+/* =========================================
+   PAGINATION
+========================================= */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.pagination button {
+    padding: 9px 15px;
+    border: 1px solid #c7c7c7;
+    background: #f2f2f2;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.pagination button:hover {
+    background: #dfe7f5;
+}
+
+.pagination button.active {
+    background: #007bff;
+    color: #fff;
+    border-color: #006adc;
+    font-weight: bold;
+}
+
+.pagination button:disabled {
+    background: #e1e1e1;
+    color: #888;
+}
+
+/* =========================================
+   BACK BUTTON
+========================================= */
+.back-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.btn-back {
+    padding: 12px 26px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-back:hover {
+    background: #1f8c38;
+}

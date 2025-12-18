@@ -1,0 +1,125 @@
+/* PAGE BACKGROUND */
+body {
+    background: #d7efff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER BAR - smaller height, smaller font */
+header {
+    background: #0072c6;
+    color: white;
+    padding: 4px 0;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* MAIN FORM CONTAINER - smaller width + padding */
+.container {
+    width: 360px;                    /* reduced from 450px */
+    background: white;
+    padding: 18px;                   /* reduced from 25px */
+    margin: 25px auto;               /* reduced spacing */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+/* LABEL STYLE - smaller font */
+label {
+    display: block;
+    font-size: 14px;                 /* reduced from 16px */
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* INPUT FIELDS - smaller padding + font */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 9px;                    /* reduced from 12px */
+    font-size: 14px;                 /* reduced from 15px */
+    border: 1px solid #c7d6e2;
+    border-radius: 6px;              /* reduced border radius */
+    background: #eef5ff;
+    margin-bottom: 10px;
+}
+
+input:focus {
+    border-color: #0072c6;
+    background: #f3f9ff;
+}
+
+/* PASSWORD WRAPPER */
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper .eye-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 14px;                 /* smaller icon */
+}
+
+/* MATCH MESSAGE */
+#matchMessage {
+    font-size: 12px;                 /* reduced */
+    margin-top: -5px;
+    margin-bottom: 8px;
+}
+
+/* FORM ERROR MESSAGE */
+#formError {
+    color: red;
+    font-weight: bold;
+    font-size: 13px;                 /* reduced */
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+/* BUTTON - smaller */
+#sendOtpBtn,
+input[type="submit"] {
+    width: 100%;
+    background: #0072c6;
+    color: white;
+    border: none;
+    padding: 10px;                   /* reduced from 14px */
+    font-size: 15px;                 /* reduced from 17px */
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+#sendOtpBtn:hover,
+input[type="submit"]:hover {
+    background: #005fa3;
+}
+
+/* LOGIN LINK */
+a {
+    color: #0066cc;
+    text-decoration: none;
+    font-size: 13px;                 /* reduced */
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* TEXT BELOW BUTTON */
+.container p {
+    text-align: center;
+    font-size: 13px;                 /* reduced */
+    margin-top: 12px;
+}
+
+/* Messages */
+.msg { font-size: 12px; margin-top: 2px; }
+.msg.error { color: red; }
+.msg.success { color: green; }

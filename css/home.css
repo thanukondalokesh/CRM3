@@ -1,0 +1,26 @@
+.welcome-container {
+    display: flex;
+    justify-content: center;      /* horizontal center */
+    align-items: center;           /* vertical center   */
+    height: calc(100vh - 80px);    /* full page height minus header */
+    text-align: center;
+}
+
+.welcome-text {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.welcome-text {
+    animation: fadeIn 1.2s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+body {
+    background: #f7f9fc; /* very light blue/gray background */
+}

@@ -1,0 +1,73 @@
+/* ===========================
+   FOOTER MAIN STYLES
+=========================== */
+.app-footer {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 14px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+
+    position: fixed;   /* Stay at bottom */
+    bottom: 0;
+    left: 0;
+
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+
+    box-shadow: 0 -3px 8px rgba(0, 0, 0, 0.25);
+    z-index: 900;
+}
+
+/* ===========================
+   LEFT TEXT
+=========================== */
+.footer-left p {
+    margin: 0;
+    font-weight: 500;
+}
+
+/* ===========================
+   RIGHT LINKS
+=========================== */
+.footer-right a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.footer-right a:hover {
+    text-decoration: underline;
+    opacity: 0.85;
+}
+
+/* ===========================
+   AVOID CONTENT OVERLAP
+=========================== */
+body {
+    padding-bottom: 70px; /* Space for the footer */
+}
+
+/* ===========================
+   MOBILE RESPONSIVE
+=========================== */
+@media (max-width: 600px) {
+    .app-footer {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .footer-right a {
+        margin: 8px;
+        display: inline-block;
+    }
+}
+.app-footer {
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.15);
+}

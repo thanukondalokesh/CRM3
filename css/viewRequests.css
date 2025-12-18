@@ -1,0 +1,226 @@
+/* ==========================================================
+   TOP ROW (SUBMIT LEFT + BACK RIGHT)
+========================================================== */
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.link-submit {
+    font-size: 18px;
+    font-weight: 600;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.link-submit:hover {
+    text-decoration: underline;
+}
+
+/* Back to Home Button */
+.btn-back {
+    background-color: #555;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-back:hover {
+    background-color: #333;
+}
+
+/* ==========================================================
+   GENERAL PAGE STYLING
+========================================================== */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f9fc;
+    margin: 20px;
+     padding-top: 50px;    /* 👈 SPACE BETWEEN NAVBAR AND FORM */
+}
+
+h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 26px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* ==========================================================
+   FILTER FORM
+========================================================== */
+.filter-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    background: #e8f0fe;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.filter-form label {
+    font-weight: bold;
+    color: #333;
+}
+
+.filter-form select,
+.filter-form input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.btn-search {
+    padding: 8px 16px;
+    background: #007acc;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+.btn-clear {
+    padding: 8px 16px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+}
+
+/* PDF Button */
+.pdf-btn {
+    padding: 10px 18px;
+    background:#4CAF50;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+/* ==========================================================
+   TABLE STYLING
+========================================================== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+table th, 
+table td {
+    padding: 10px 15px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+th {
+    background-color: #007acc;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f1f8ff;
+}
+
+.highlight {
+    background-color: #FFF9C4 !important;
+    border-left: 4px solid #FBC02D;
+}
+
+/* ==========================================================
+   ACTION BUTTONS (EDIT / DELETE)
+========================================================== */
+.btn-edit,
+.btn-delete {
+    padding: 6px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    color: #fff;
+    display: inline-block;
+    transition: 0.2s ease-in-out;
+    margin-right: 5px;
+}
+
+.btn-edit {
+    background-color: #007bff;
+}
+
+.btn-edit:hover {
+    background-color: #0056b3;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+}
+
+.btn-delete:hover {
+    background-color: #b02a37;
+}
+
+/* ==========================================================
+   PAGINATION
+========================================================== */
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.page-btn, 
+.page-active, 
+.page-disabled {
+    padding: 8px 14px;
+    margin: 3px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+
+/* Normal */
+.page-btn {
+    background: #f5f5f5;
+    color: #333;
+    border: 1px solid #ccc;
+}
+
+.page-btn:hover {
+    background: #ddd;
+}
+
+/* Active */
+.page-active {
+    background: #28a745;
+    color: white;
+    border: 1px solid #28a745;
+}
+
+/* Disabled */
+.page-disabled {
+    color: #999;
+    background: #e6e6e6;
+    border: 1px solid #ccc;
+}

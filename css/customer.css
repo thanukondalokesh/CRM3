@@ -1,0 +1,398 @@
+/* ==================================================== */
+/*        CRM CUSTOMER PAGE — MODERN PREMIUM UI         */
+/* ==================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", "Segoe UI", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #eef2f7, #f8faff);
+    padding: 25px;
+    color: #2d3748;
+}
+
+/* --------------------------------------- */
+/* PAGE HEADER / BUTTONS */
+/* --------------------------------------- */
+.top-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.btn-back-link {
+    font-weight: 700;
+    color: #1976d2;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.btn-success {
+    background: linear-gradient(135deg, #42c45f, #3ea454);
+    color: white;
+    padding: 12px 22px;
+    border-radius: 12px;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    transition: 0.25s;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+}
+
+.btn-success:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(135deg, #3ca755, #318c45);
+}
+
+/* --------------------------------------- */
+/* TWO MAIN BOXES */
+/* --------------------------------------- */
+.content-row {
+    display: flex;
+    gap: 28px;
+    margin-bottom: 35px;
+}
+
+.left-box, .right-box {
+    flex: 1;
+}
+
+.card {
+    background: white;
+    padding: 28px;
+    border-radius: 18px;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+    border: 1px solid #e2e8f0;
+    animation: fadeUp 0.5s ease-out;
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(12px); }
+    to   { opacity: 1; transform: translateY(0px); }
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #1a202c;
+    font-weight: 700;
+}
+
+/* --------------------------------------- */
+/* FORM INPUTS */
+/* --------------------------------------- */
+.label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    display: block;
+    color: #222;
+}
+
+.input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 18px;
+    border: 1px solid #cbd5e1;
+    border-radius: 12px;
+    outline: none;
+    background: #f9fafb;
+    transition: 0.25s;
+    font-size: 15px;
+}
+
+.input:focus {
+    background: #fff;
+    border-color: #3182ce;
+    box-shadow: 0 0 0 4px rgba(49,130,206,0.15);
+}
+
+/* FORM ACTIONS BUTTONS */
+.form-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #1976d2, #0d5ca5);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    border: none;
+    font-weight: 700;
+    transition: 0.25s;
+    width: 130px;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+}
+
+.btn-clear {
+    background: #e63946;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    border: none;
+    font-weight: 700;
+    transition: 0.25s;
+    width: 120px;
+}
+
+.btn-clear:hover {
+    background: #c71d2c;
+    transform: translateY(-2px);
+}
+
+/* --------------------------------------- */
+/* SEARCH BOX */
+/* --------------------------------------- */
+.search-card {
+    min-height: 180px;
+}
+
+.search-row {
+    display: flex;
+    gap: 10px;
+}
+
+.search-input {
+    flex: 1;
+    padding: 14px;
+    border-radius: 12px;
+    border: 1px solid #cbd5e1;
+    background: #f9fafb;
+}
+
+.search-input:focus {
+    border-color: #4c8ef7;
+    box-shadow: 0 0 0 4px rgba(76,142,247,0.2);
+}
+
+.search-note {
+    color: #6b7280;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* --------------------------------------- */
+/* CUSTOMER TABLE */
+/* --------------------------------------- */
+.table-wrap {
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+.data-table {
+    width: 100%;
+    background: white;
+    border-collapse: collapse;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.07);
+}
+
+.data-table thead th {
+    background: #1e293b;
+    color: white;
+    padding: 16px;
+    font-size: 15px;
+    text-align: left;
+}
+
+.data-table tbody tr {
+    transition: 0.25s;
+}
+
+.data-table tbody tr:hover {
+    background: #f1f5f9;
+}
+
+.data-table td {
+    padding: 14px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+/* ACTION BUTTONS */
+.action-btn {
+    padding: 8px 14px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    transition: 0.25s;
+}
+
+.btn-edit {
+    background: #2563eb;
+    color: white;
+}
+
+.btn-edit:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+.btn-delete {
+    background: #dc2626;
+    color: white;
+}
+
+.btn-delete:hover {
+    background: #b91c1c;
+    transform: translateY(-2px);
+}
+
+/* --------------------------------------- */
+/* PAGINATION */
+/* --------------------------------------- */
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 26px;
+    gap: 10px;
+}
+
+.page-btn {
+    background: #2563eb;
+    padding: 10px 16px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    border: none;
+    transition: 0.25s;
+}
+
+.page-btn:hover {
+    background: #1e40af;
+}
+
+.active-page {
+    background: #1e40af !important;
+}
+
+/* --------------------------------------- */
+/* MODAL */
+/* --------------------------------------- */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.55);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.modal-box {
+    width: 400px;
+    background: white;
+    padding: 28px;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.18);
+    animation: zoomIn 0.3s ease-out;
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.6); opacity: 0; }
+    to   { transform: scale(1); opacity: 1; }
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btn-edit,
+.btn-delete {
+    width: 48%;
+}
+
+/* --------------------------------------- */
+/* RESPONSIVE */
+/* --------------------------------------- */
+
+@media (max-width: 900px) {
+    .content-row {
+        flex-direction: column;
+    }
+}
+/* ===================================================== */
+/* SUPER COMPACT CUSTOMER BOX ONLY (LEFT SIDE) */
+/* ===================================================== */
+
+.left-box .card {
+    padding: 8px 12px !important;     /* Reduced top-bottom padding */
+}
+
+.left-box .section-title {
+    margin-bottom: 6px !important;    /* Less gap under title */
+    font-size: 18px !important;
+}
+
+.left-box .label {
+    margin-bottom: 2px !important;    /* Minimal spacing */
+    font-size: 14px !important;
+}
+
+.left-box .input {
+    padding: 6px 10px !important;      /* Smaller input height */
+    margin-bottom: 8px !important;     /* Reduce gap between inputs */
+    font-size: 14px !important;
+}
+
+.left-box br {
+    display: none !important;         /* Removes extra empty space */
+}
+
+.left-box .form-actions {
+    margin-top: 4px !important;       /* Reduce space above buttons */
+}
+
+.left-box .form-actions button {
+    padding: 6px 12px !important;     /* Smaller buttons */
+    width: 90px !important;
+    font-size: 14px !important;
+}
+/* TOP BUTTON ROW */
+.top-btn-row {
+    width: 95%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;  /* Left & right alignment */
+    align-items: center;
+}
+
+/* LEFT BUTTON */
+.btn-back-link {
+    background: #0d6efd;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* RIGHT BUTTON */
+.btn-success {
+    background: #198754;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.btn-back-link:hover,
+.btn-success:hover {
+    opacity: 0.9;
+}
