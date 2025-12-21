@@ -18,16 +18,14 @@
 <!-- Floating Menu -->
 <div id="dropdownMenu" class="dropdown-menu">
 
-    <a href="/CRM3/views/home.cfm">Home Page</a>
-    <a href="/CRM3/views/myprofile.cfm">My Profile</a>
-
+    
+    <a href="/CRM3/views/myprofile.cfm">Go To My Profile</a>
+    <a href="/CRM3/views/submitRequest.cfm">Submit Request</a>
+    <a href="/CRM3/views/viewRequests.cfm">View Requests</a>
     <cfif structKeyExists(session, "adminstatus") AND session.adminstatus EQ "1">
         <a href="/CRM3/views/viewLogs.cfm">View Logs</a>
         <a href="/CRM3/views/customers.cfm">Customers Management</a>
         <a href="/CRM3/views/registerList.cfm">Users Register List</a>
     </cfif>
-
-    <a href="/CRM3/views/submitRequest.cfm">Submit Request</a>
-    <a href="/CRM3/views/viewRequests.cfm">View Requests</a>
 
 </div>

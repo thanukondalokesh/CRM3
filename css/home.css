@@ -24,3 +24,61 @@
 body {
     background: #f7f9fc; /* very light blue/gray background */
 }
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+}
+
+/* Center Content */
+.home-content {
+    margin-top: 160px;
+    text-align: center;
+}
+
+/* Welcome Text */
+.welcome-text {
+    font-size: 34px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 60px;
+}
+
+/* Buttons Container */
+.home-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+/* Common Button Style */
+.btn {
+    padding: 18px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 12px;
+    color: #fff;
+    box-shadow: 0 10px 22px rgba(0,0,0,0.18);
+    transition: all 0.25s ease;
+}
+
+/* Hover Effect */
+.btn:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+/* Button Colors */
+.btn-blue {
+    background: linear-gradient(135deg, #4facfe, #00c6fb);
+}
+
+.btn-green {
+    background: linear-gradient(135deg, #43e97b, #38f9d7);
+}
+
+.btn-orange {
+    background: linear-gradient(135deg, #fa709a, #fee140);
+    color: #000;
+}
